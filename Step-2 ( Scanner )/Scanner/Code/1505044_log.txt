@@ -1,0 +1,148 @@
+Line no 1: TOKEN <INT> Lexeme int found
+Line no 1: TOKEN <ID> Lexeme main found
+
+0 -->
+1 -->
+2 -->
+3 -->
+4 -->
+5 -->
+6 -->-->< main : ID >
+7 -->
+8 -->
+9 -->
+Line no 1: TOKEN <LPAREN> Lexeme ( found
+Line no 1: TOKEN <RPAREN> Lexeme ) found
+Line no 1: TOKEN <LCURL> Lexeme { found
+Line no 4: TOKEN <ID> Lexeme c found
+
+0 -->
+1 -->
+2 -->
+3 -->
+4 -->
+5 -->
+6 -->-->< main : ID >-->< c : ID >
+7 -->
+8 -->
+9 -->
+Line no 4: TOKEN <ASSIGNOP> Lexeme = found
+Line no 4: TOKEN <CONST_CHAR> Lexeme '\t' found
+
+0 -->
+1 -->
+2 -->
+3 -->-->< '\t' : CONST_CHAR >
+4 -->
+5 -->
+6 -->-->< main : ID >-->< c : ID >
+7 -->
+8 -->
+9 -->
+Line no 4: TOKEN <SEMICOLON> Lexeme ; found
+Line no 5: UNFINISHED STRING 	string b= " 
+Line no 5: UNFINISHED STRING my name is pranto" 
+Line no 5: TOKEN <SEMICOLON> Lexeme ; found
+Line no 6: TOKEN <ID> Lexeme a found
+
+0 -->
+1 -->
+2 -->
+3 -->-->< '\t' : CONST_CHAR >
+4 -->
+5 -->
+6 -->-->< main : ID >-->< c : ID >-->< a : ID >
+7 -->
+8 -->
+9 -->
+Line no 6: TOKEN <ASSIGNOP> Lexeme = found
+Line no 6: TOKEN <ID> Lexeme a found
+
+0 -->
+1 -->
+2 -->
+3 -->-->< '\t' : CONST_CHAR >
+4 -->
+5 -->
+6 -->-->< main : ID >-->< c : ID >-->< a : ID >-->< a : ID >
+7 -->
+8 -->
+9 -->
+Line no 6: TOKEN <ADDOP> Lexeme + found
+Line no 6: TOKEN <CONST_INT> Lexeme 1 found
+
+0 -->
+1 -->
+2 -->
+3 -->-->< '\t' : CONST_CHAR >
+4 -->
+5 -->
+6 -->-->< main : ID >-->< c : ID >-->< a : ID >-->< a : ID >
+7 -->
+8 -->-->< 1 : CONST_INT >
+9 -->
+Line no 6: TOKEN <SEMICOLON> Lexeme ; found
+Line no 7: TOKEN <ID> Lexeme b found
+
+0 -->
+1 -->
+2 -->
+3 -->-->< '\t' : CONST_CHAR >
+4 -->
+5 -->
+6 -->-->< main : ID >-->< c : ID >-->< a : ID >-->< a : ID >-->< b : ID >
+7 -->
+8 -->-->< 1 : CONST_INT >
+9 -->
+Line no 7: TOKEN <ASSIGNOP> Lexeme = found
+Line no 7: TOKEN <ID> Lexeme b found
+
+0 -->
+1 -->
+2 -->
+3 -->-->< '\t' : CONST_CHAR >
+4 -->
+5 -->
+6 -->-->< main : ID >-->< c : ID >-->< a : ID >-->< a : ID >-->< b : ID >-->< b : ID >
+7 -->
+8 -->-->< 1 : CONST_INT >
+9 -->
+Line no 7: TOKEN <ADDOP> Lexeme + found
+Line no 7: TOKEN <CONST_INT> Lexeme 1 found
+
+0 -->
+1 -->
+2 -->
+3 -->-->< '\t' : CONST_CHAR >
+4 -->
+5 -->
+6 -->-->< main : ID >-->< c : ID >-->< a : ID >-->< a : ID >-->< b : ID >-->< b : ID >
+7 -->
+8 -->-->< 1 : CONST_INT >-->< 1 : CONST_INT >
+9 -->
+Line no 7: TOKEN <SEMICOLON> Lexeme ; found
+Line no 8: TOKEN <INCOP> Lexeme ++ found
+Line no 8: TOKEN <SEMICOLON> Lexeme ; found
+Line no 9: TOKEN <ADDOP> Lexeme + found
+Line no 9: TOKEN <SEMICOLON> Lexeme ; found
+Line no 10: TOKEN <RELOP> Lexeme <= found
+Line no 10: TOKEN <SEMICOLON> Lexeme ; found
+Line no 12: UNFINISHED STRING 	c=" 
+Line no 12: UNFINISHED STRING  every breath\
+		you take" 
+Line no 12: TOKEN <SEMICOLON> Lexeme ; found
+Line no 14: TOKEN <RETURN> Lexeme return found
+Line no 14: TOKEN <CONST_INT> Lexeme 0 found
+
+0 -->
+1 -->
+2 -->
+3 -->-->< '\t' : CONST_CHAR >
+4 -->
+5 -->
+6 -->-->< main : ID >-->< c : ID >-->< a : ID >-->< a : ID >-->< b : ID >-->< b : ID >
+7 -->
+8 -->-->< 1 : CONST_INT >-->< 1 : CONST_INT >-->< 0 : CONST_INT >
+9 -->
+Line no 14: TOKEN <SEMICOLON> Lexeme ; found
+Line no 15: TOKEN <RCURL> Lexeme } found

@@ -1,0 +1,99 @@
+At line 1 : type_specifier : INT
+
+At Line 1 : declaration_list :	ID
+x
+At Line 1 : declaration_list : 	declaration_list COMMA ID
+y
+At Line 1 : declaration_list : 	declaration_list COMMA ID
+z
+At line 1 : var_declaration : type_specifier declaration_list SEMICOLON
+
+At line 1 unit : var_declaration
+
+At line 1 : program : unit
+
+At line 1 : type_specifier : FLOAT
+
+At Line 1 : declaration_list :	ID
+a
+At line 1 : var_declaration : type_specifier declaration_list SEMICOLON
+
+At line 1 unit : var_declaration
+
+At line 1 : program : program unit
+
+At line 3 : type_specifier : VOID
+
+At Line 3 : func_declaration : 	type_specifier ID LPAREN parameter_list RPAREN SEMICOLON
+foo
+At line 3 unit : func_declaration
+
+At line 3 : program : program unit
+
+At line 5 : type_specifier : INT
+
+At line 5 : type_specifier : INT
+
+At Line 5 : parameter_list  : type_specifier ID
+a
+At line 5 : type_specifier : INT
+
+At Line 5 : parameter_list  : parameter_list COMMA type_specifier ID
+b
+At Line 6 : variable : ID
+a
+At line 6 : factor : variable
+
+At line 6 : unary_expression : factor
+
+At line 6 : term : unary_expression
+
+At line 6 : simple_expression : term
+
+At Line 6 : variable : ID
+b
+At line 6 : factor : variable
+
+At line 6 : unary_expression : factor
+
+At line 6 : term : unary_expression
+
+At line 6 : simple_expression : simple_expression ADDOP term
+
+At line 6 : rel_expression : simple_expression
+
+At line 6 : logic_expression : rel_expression
+
+At line 6 : expression : logic_expression
+
+At line 6 : statement : RETURN expression SEMICOLON
+
+At line 6 : statements : statement
+
+ ScopeTable# 2
+ 6 --> < a : ID > 
+ 7 --> < b : ID > 
+
+ ScopeTable# 1
+ 3 --> < x : ID > 
+ 4 --> < y : ID > 
+ 5 --> < z : ID > 
+ 6 --> < a : ID > 
+ 12 --> < foo : ID > 
+
+At line 7 : compound_statement : LCURL statements RCURL
+
+At Line 7 : func_definition : type_specifier ID LPAREN parameter_list RPAREN compound_statement
+
+var
+At line 7 unit : func_definition
+
+At line 7 : program : program unit
+
+At line 9 : type_specifier : VOID
+
+At Line 10 : variable : ID
+x
+At line 10 : factor : CONST_INT
+
+2

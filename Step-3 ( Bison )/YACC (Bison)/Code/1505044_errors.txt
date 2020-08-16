@@ -1,0 +1,3 @@
+Error at line 6 : a doesn't exist
+Error at line 6 : b doesn't exist
+Error at line 10 : x doesn't exist

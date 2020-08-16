@@ -1,0 +1,450 @@
+At line 1 : type_specifier : INT
+
+int
+
+At line 2 : type_specifier : INT
+
+int
+
+At line 2 : declaration_list :	ID
+a
+
+At line 2 : declaration_list : 	declaration_list COMMA ID
+a ,b
+
+At line 2 : declaration_list : 	declaration_list COMMA ID
+a ,b ,i
+
+At line 2 : var_declaration : type_specifier declaration_list SEMICOLON
+
+int a ,b ,i ;
+
+At line 2 : statement : var_declaration
+
+int a ,b ,i ;
+
+
+At line 2 : statements : statement
+
+int a ,b ,i ;
+
+
+At line 3 : variable : ID
+b
+
+At line 3 : factor : CONST_INT
+
+0
+
+At line 3 : unary_expression : factor
+
+0
+
+At line 3 : term : unary_expression
+
+0
+
+At line 3 : simple_expression : term
+
+0
+
+At line 3 : rel_expression : simple_expression
+
+0
+
+At line 3 : logic_expression : rel_expression
+
+0
+
+At line 3 : expression : variable ASSIGNOP logic_expression
+
+b2=0
+
+At line 3 : expression_statement : expression SEMICOLON
+
+b2=0;
+
+At line 3 : statement : expression_statement
+
+b2=0;
+
+At line 3 : statements : statements statement
+
+int a ,b ,i ;
+ b2=0;
+
+
+At line 4 : variable : ID
+i
+
+At line 4 : factor : CONST_INT
+
+0
+
+At line 4 : unary_expression : factor
+
+0
+
+At line 4 : term : unary_expression
+
+0
+
+At line 4 : simple_expression : term
+
+0
+
+At line 4 : rel_expression : simple_expression
+
+0
+
+At line 4 : logic_expression : rel_expression
+
+0
+
+At line 4 : expression : variable ASSIGNOP logic_expression
+
+i2=0
+
+At line 4 : expression_statement : expression SEMICOLON
+
+i2=0;
+
+At line 4 : variable : ID
+i
+
+At line 4 : factor : variable
+
+i
+
+At line 4 : unary_expression : factor
+
+i
+
+At line 4 : term : unary_expression
+
+i
+
+At line 4 : simple_expression : term
+
+i
+
+At line 4 : factor : CONST_INT
+
+4
+
+At line 4 : unary_expression : factor
+
+4
+
+At line 4 : term : unary_expression
+
+4
+
+At line 4 : simple_expression : term
+
+4
+
+At line 4 : rel_expression : simple_expression RELOP simple_expression
+
+At line 4 : logic_expression : rel_expression
+
+0
+
+At line 4 : expression : logic_expression
+
+0
+
+At line 4 : expression_statement : expression SEMICOLON
+
+0;
+
+At line 4 : variable : ID
+i
+
+At line 4 : factor : variable INCOP
+
+i++
+
+At line 4 : unary_expression : factor
+
+i++
+
+At line 4 : term : unary_expression
+
+i++
+
+At line 4 : simple_expression : term
+
+i++
+
+At line 4 : rel_expression : simple_expression
+
+i++
+
+At line 4 : logic_expression : rel_expression
+
+i++
+
+At line 4 : expression : logic_expression
+
+i++
+
+At line 5 : variable : ID
+a
+
+At line 5 : factor : CONST_INT
+
+3
+
+At line 5 : unary_expression : factor
+
+3
+
+At line 5 : term : unary_expression
+
+3
+
+At line 5 : simple_expression : term
+
+3
+
+At line 5 : rel_expression : simple_expression
+
+3
+
+At line 5 : logic_expression : rel_expression
+
+3
+
+At line 5 : expression : variable ASSIGNOP logic_expression
+
+a3=3
+
+At line 5 : expression_statement : expression SEMICOLON
+
+a3=3;
+
+At line 5 : statement : expression_statement
+
+a3=3;
+
+At line 5 : statements : statement
+
+a3=3;
+
+At line 6 : variable : ID
+a
+
+At line 6 : factor : variable DECOP
+
+a--
+
+At line 6 : unary_expression : factor
+
+a--
+
+At line 6 : term : unary_expression
+
+a--
+
+At line 6 : simple_expression : term
+
+a--
+
+At line 6 : rel_expression : simple_expression
+
+a--
+
+At line 6 : logic_expression : rel_expression
+
+a--
+
+At line 6 : expression : logic_expression
+
+a--
+
+At line 7 : variable : ID
+b
+
+At line 7 : factor : variable INCOP
+
+b++
+
+At line 7 : unary_expression : factor
+
+b++
+
+At line 7 : term : unary_expression
+
+b++
+
+At line 7 : simple_expression : term
+
+b++
+
+At line 7 : rel_expression : simple_expression
+
+b++
+
+At line 7 : logic_expression : rel_expression
+
+b++
+
+At line 7 : expression : logic_expression
+
+b++
+
+At line 7 : expression_statement : expression SEMICOLON
+
+b++;
+
+At line 7 : statement : expression_statement
+
+b++;
+
+At line 7 : statements : statement
+
+b++;
+
+At line 8 : compound_statement : LCURL statements RCURL
+
+{
+b++;
+}
+
+At line 8 : statement : compound_statement
+
+{
+b++;
+}
+
+At line 8 : statement : WHILE LPAREN expression RPAREN statement
+
+while(b++)
+b++
+
+At line 8 : statements : statements statement
+
+b++; while(b++)
+b++
+
+
+At line 9 : compound_statement : LCURL statements RCURL
+
+{
+b++;
+}{
+b++; while(b++)
+b++
+
+}
+
+At line 9 : statement : compound_statement
+
+{
+b++;
+}{
+b++; while(b++)
+b++
+
+}
+
+At line 9 : statement : FOR LPAREN expression_statement expression_statement expression RPAREN statement
+
+for (i2 tempo02 b++)
+a3
+
+At line 9 : statements : statements statement
+
+b++; while(b++)
+b++
+ for (i2 tempo02 b++)
+a3
+
+
+At line 11 : compound_statement : LCURL statements RCURL
+
+{
+b++;
+}{
+b++; while(b++)
+b++
+
+}{
+b++; while(b++)
+b++
+ for (i2 tempo02 b++)
+a3
+
+}
+
+At line 11 : func_definition : type_specifier ID LPAREN parameter_list RPAREN compound_statement
+int main(){
+b++;
+}{
+b++; while(b++)
+b++
+
+}{
+b++; while(b++)
+b++
+ for (i2 tempo02 b++)
+a3
+
+}
+
+
+At line 11 : unit : func_definition
+
+int main(){
+b++;
+}{
+b++; while(b++)
+b++
+
+}{
+b++; while(b++)
+b++
+ for (i2 tempo02 b++)
+a3
+
+}
+
+
+At line 11 : program : unit
+
+
+int main(){
+b++;
+}{
+b++; while(b++)
+b++
+
+}{
+b++; while(b++)
+b++
+ for (i2 tempo02 b++)
+a3
+
+}
+
+
+At line 12 : start : program
+
+
+int main(){
+b++;
+}{
+b++; while(b++)
+b++
+
+}{
+b++; while(b++)
+b++
+ for (i2 tempo02 b++)
+a3
+
+}
+
+
+Total Lines : 12

@@ -1,0 +1,16 @@
+int main(){
+
+	
+	c='\t';
+	string b= "my name is pranto";
+	a= a+1;
+	b=b+1;
+	++;
+	+;
+	<=;
+
+	c=" every breath\
+		you take";
+	
+	return 0;
+}
